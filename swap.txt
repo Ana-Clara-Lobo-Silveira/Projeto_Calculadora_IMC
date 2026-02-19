@@ -1,0 +1,24 @@
+Registro de lógica
+
+// Coletar uma informação, trata-la e executar os cálculos.
+// let peso = 90;
+// let altura = 2.02;
+// const imc = peso/ (altura**2);
+
+
+// function calcularIMC(){
+//     console.log(imc);
+//     classificarIMC();
+// };
+
+// function classificarIMC(){
+//     if (imc<18.5){console.log("Abaixo do peso");}
+//     else if (imc>18.5 && imc> 25){console.log("Peso normal");}
+//     else if (imc>25 && imc> 30){console.log("Sobrepeso");}
+//     else{console.log("Obesidade")}
+// }
+// function limparCampos(){
+
+// }
+
+// calcularIMC();
