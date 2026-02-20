@@ -9,7 +9,7 @@ const formulario = document.getElementById('imcForm');
 // FUNÇÃO AUXILIAR
 
 function mostrarResultado(mensagem) {
-  textoResultado.textContent = mensagem; c
+  textoResultado.textContent = mensagem; 
 }
 
 
@@ -29,24 +29,21 @@ function calcularIMC() {
 
   // Cálculo
   const imc = peso / (altura * altura);
+  
   let classificacao = '';
-
-  // Classificação
-  if (imc < 18.5) {
-    classificacao = 'Abaixo do peso';
-  } else if (imc < 25) {
-    classificacao = 'Peso normal';
-  } else if (imc < 30) {
-    classificacao = 'Sobrepeso';
-  } else {
-    classificacao = 'Obesidade';
-  }
-
+  classificacao = classificarIMC(imc)
   // Template String
   mostrarResultado(`Seu IMC é ${imc.toFixed(2)} (${classificacao}).`);
 };
 
+function classificarIMC(valorImc){
+  // Classificação
+  if (valorImc < 18.5) return 'Abaixo do peso';
+  if (valorImc < 25) return 'Peso normal';
+  if (valorImc < 30) return 'Sobrepeso';
+  return'Obesidade';
 
+};
 
 // LIMPAR CAMPOS
 
